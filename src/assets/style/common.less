@@ -1,0 +1,82 @@
+@main-bgc: #020919; //主背景色
+
+/* 直接声明 end */
+/* 兼容性样式 start */
+.scroll-hide {
+  /*IE10,IE11,IE12*/
+  /* 隐藏滚动条 */
+  -ms-scroll-chaining: chained;
+  -ms-overflow-style: none;
+  -ms-content-zooming: zoom;
+  -ms-scroll-rails: none;
+  -ms-content-zoom-limit-min: 100%;
+  -ms-content-zoom-limit-max: 500%;
+  -ms-scroll-snap-type: proximity;
+  -ms-scroll-snap-points-x: snapList(100%, 200%, 300%, 400%, 500%);
+  -ms-overflow-style: none;
+  overflow: auto;
+}
+
+/*webkit内核*/
+.scroll-hide::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.scroll-hide::-webkit-scrollbar-button {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.scroll-hide::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.scroll-hide::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.scroll-hide::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.scroll-hide::-webkit-scrollbar-corner {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.scroll-hide::-webkit-scrollbar-resizer {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/*.scroll-hide::-webkit-scrollbar {*/
+/*width:10px;*/
+/*height:10px;*/
+/*}*/
+/*o内核*/
+.scroll-hide .-o-scrollbar {
+  -moz-appearance: none !important;
+  background: rgba(0, 255, 0, 0) !important;
+}
+
+.scroll-hide::-o-scrollbar-button {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.scroll-hide::-o-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.scroll-hide::-o-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.scroll-hide::-o-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.scroll-hide::-o-scrollbar-corner {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.scroll-hide::-o-scrollbar-resizer {
+  background-color: rgba(0, 0, 0, 0);
+}

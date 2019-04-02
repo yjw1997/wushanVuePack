@@ -1,0 +1,140 @@
+::-webkit-scrollbar {
+    width: 2px;
+    height:2px;
+}
+
+/*  table部分样式*/
+.el-table--scrollable-x .el-table__body-wrapper {
+    overflow-x: hidden;
+}
+
+.el-table {
+}
+.el-table th {
+    background-color: #253332;
+    color: white;
+}
+
+.el-table tr {
+    background-color: black;
+    color: white;
+}
+
+.el-table__body-wrapper {
+}
+
+.el-table--border td, .el-table--border th, .el-table__body-wrapper .el-table--border.is-scrolling-left ~ .el-table__fixed {
+    border-right: none;
+}
+
+.el-table th.is-leaf {
+    border-bottom: none;
+    padding: 0;
+    height: 35px;
+    background-color: #1F2825;
+}
+.el-table__row td{
+    padding: 0;
+    height: 35px;
+    background-color: #253332;
+}
+.el-table td, .el-table th.is-leaf {
+    border-bottom: none;
+}
+.el-table--border, .el-table--group {
+    /*border-top:1px solid #37A7B7;*/
+    /*border-left: 1px solid #37A7B7;*/
+    /*border-bottom: 1px solid #37A7B7;*/
+    border: none;
+}
+.el-table--border .el-table__row td:last-child{
+    border-right: none;
+}
+.el-table__header tr th:last-child{
+    border-right: none;
+}
+.el-table--border::after, .el-table--group::after, .el-table::before {
+    background: none;
+}
+
+.el-table--enable-row-hover .el-table__body tr:hover > td {
+    background-color: #283032 !important;
+}
+
+.el-table--scrollable-y .el-table__body-wrapper {
+    -ms-scroll-chaining: chained;
+    -ms-overflow-style: none;
+    -ms-content-zooming: zoom;
+    -ms-scroll-rails: none;
+    -ms-content-zoom-limit-min: 100%;
+    -ms-content-zoom-limit-max: 500%;
+    -ms-scroll-snap-type: proximity;
+    -ms-scroll-snap-points-x: snapList(100%, 200%, 300%, 400%, 500%);
+    -ms-overflow-style: none;
+    overflow: auto;
+}
+.el-table, .el-table__expanded-cell{
+    background: none;
+}
+.el-table .cell, .el-table th div, .el-table--border td:first-child .cell, .el-table--border th:first-child .cell{
+    padding: 0;
+}
+.el-table--border::after, .el-table--group::after, .el-table::before{
+    background: none;
+}
+.el-table td, .el-table th.is-leaf{
+    border: none;
+}
+/**
+    input部分
+ */
+.el-input__inner{
+    padding: 0 5px;
+}
+
+/**
+button
+ */
+.el-button{
+    display: inline-flex;
+    justify-content: center;
+}
+.el-button--small, .el-button--small.is-round{
+    padding: 9px;
+}
+
+
+/**
+radio
+ */
+.el-radio{
+    color: white;
+}
+.el-radio__input.is-checked+.el-radio__label{
+    color: #37A7B7;
+}
+.el-radio__input.is-checked .el-radio__inner{
+    border-color: #37A7B7;
+    background: #37A7B7;
+}
+
+
+
+.el-form-item__label {
+    text-align: right;
+    float: left;
+    font-size: 14px;
+    color: white;
+    line-height: 40px;
+    padding: 0 12px 0 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.el-form-item--mini.el-form-item, .el-form-item--small.el-form-item{
+    margin-bottom: 10px;
+}
+
+.el-checkbox {
+    color: white;
+
+}

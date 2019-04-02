@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>leftPanel</title>
+  <script src="./tools.js"></script>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    width: 380px;
+    height: 880px;
+  }
+
+  #leftPanel {
+    background-color: #253332;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  #leftpanelLoading {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all .2s ease-in-out;
+    background-color: #253332;
+  }
+
+  #leftpanelLoading.hide {
+
+    top: 0;
+    right: -100%;
+  }
+
+  #iframeContainer {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    background-color: red;
+    transition: all .2s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  #iframeContainer.show {
+    top: 0;
+    right: 0;
+    background-color: red;
+    opacity: 1;
+    visibility: visible;
+  }
+</style>
+
+<body>
+<div id="leftPanel">
+  <div id="leftpanelLoading">
+    <!--<img src="https://gss0.baidu.com/-fo3dSag_xI4khGko9WTAnF6hhy/zhidao/wh%3D600%2C800/sign=9e065066ba3eb1354492bfbd962e84eb/902397dda144ad34478efb09d6a20cf431ad850e.jpg"-->
+    <!--alt="" width="100%" height="100%">-->
+  </div>
+  <div id="iframeContainer" style="height: 100%;width: 100%"></div>
+</div>
+</body>
+<script>
+
+
+  function appenIframeTo(src) {
+    document.getElementById('iframeContainer').innerHTML =
+      ' <iframe class="leftPanel-iframe" src="' + src + '" ' +
+      ' width="100%"' +
+      'height = "100%" frameborder="0" id="myIframe"></iframe >'
+
+  }
+
+  _Tools.listenItem(
+    {
+      handleFirstMenuChange: function (param) {
+        $("#iframeContainer").removeClass("show");
+        $("#leftpanelLoading").removeClass("hide");
+
+        var mainHost = window.location.protocol + "//" + window.location.host;
+        console.log("commonLeftPanel监听到:", param);
+        let tempMsg = mainHost + "/#/" + param + "/LeftPanel";
+        setTimeout(function () {
+          appenIframeTo(tempMsg)
+        }, 300);
+        setTimeout(function () {
+          $("#leftpanelLoading").addClass("hide");
+          $("#iframeContainer").addClass("show")
+        }, 800)
+      }
+
+    })
+</script>
+
+</html>

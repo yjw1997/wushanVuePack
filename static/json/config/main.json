@@ -1,0 +1,516 @@
+{
+  "status": "200",
+  "message": "OK",
+  "data": {
+    "LEFT_MENU_PANEL": {
+      "url": "/#/CommonPage/MenuBar",
+      "round": 40,
+      "winId": 1,
+      "referX": "left",
+      "referY": "top",
+      "referOffsetX": 5,
+      "referOffsetY": 132,
+      "sizeX": 55,
+      "sizeY": 485,
+      "transparence": 220
+    },
+    "HEADER_BUTTON_PANEL": {
+      "name": "首页头部配置文件",
+      "value": {
+        "headerImageButton": {
+          "imageUrl": "/static/images/header-bg.png",
+          "width": 1920,
+          "height": 58
+        },
+        "leftHeaderPanel": {
+          "url": "/#/CommonPage/WeatherHeaderPanel",
+          "round": 0,
+          "winId": 4,
+          "referX": "left",
+          "referY": "top",
+          "referOffsetX": 0,
+          "referOffsetY": 0,
+          "sizeX": 517,
+          "sizeY": 40
+        },
+        "rightHeaderPanel": {
+          "url": "/#/CommonPage/ToolBarHeaderPanel",
+          "round": 0,
+          "winId": 3,
+          "offsetX": 0,
+          "offsetY": 0,
+          "referX": "right",
+          "referY": "top",
+          "referOffsetX": 0,
+          "referOffsetY": 0,
+          "sizeX": 505,
+          "sizeY": 40
+        }
+      }
+    },
+    "FIRST_LEVEL_MENU_PANEL": {
+      "home": {
+        "panels": [
+          {
+            "url": "/#/Security/LeftPanel",
+            "winId": 50,
+            "round": 10,
+            "referX": "left",
+            "referY": "top",
+            "referOffsetX": 60,
+            "referOffsetY": 128,
+            "sizeX": 380,
+            "sizeY": 880,
+            "transparence": 230
+          },
+          {
+            "url": "/#/CommonPage/EventDetail",
+            "winId": 80,
+            "round": 10,
+            "referX": "middle",
+            "referY": "bottom",
+            "referOffsetX": 0,
+            "referOffsetY": 57,
+            "sizeX": 930,
+            "sizeY": 250,
+            "transparence": 230
+          }
+        ]
+      },
+      "security": {
+        "panels": [
+          {
+            "url": "/#/Security/LeftPanel",
+            "winId": 50,
+            "round": 10,
+            "referX": "left",
+            "referY": "top",
+            "referOffsetX": 70,
+            "referOffsetY": 128,
+            "sizeX": 380,
+            "sizeY": 880,
+            "transparence": 240
+          },
+          {
+            "url": "/#/CommonPage/EventDetail",
+            "winId": 80,
+            "round": 10,
+            "referX": "middle",
+            "referY": "bottom",
+            "referOffsetX": 0,
+            "referOffsetY": 57,
+            "sizeX": 930,
+            "sizeY": 250,
+            "transparence": 230
+          },
+          {
+            "url": "/#/CommonPage/BottomMenu",
+            "winId": 70,
+            "round": 10,
+            "referX": "middle",
+            "referY": "bottom",
+            "referOffsetX": 0,
+            "referOffsetY": 0,
+            "sizeX": 1010,
+            "sizeY": 45,
+            "transparence": 240
+          },
+          {
+            "url": "/#/Security/RightPanel",
+            "winId": 60,
+            "round": 10,
+            "referX": "right",
+            "referY": "top",
+            "referOffsetX": 21,
+            "referOffsetY": 128,
+            "sizeX": 400,
+            "sizeY": 600,
+            "transparence": 240
+          }
+
+        ]
+      },
+      "fire": {
+        "panels": [
+          {
+            "url": "/#/Fire/LeftPanel",
+            "winId": 50,
+            "round": 10,
+            "referX": "left",
+            "referY": "top",
+            "referOffsetX": 70,
+            "referOffsetY": 128,
+            "sizeX": 380,
+            "sizeY": 880,
+            "transparence": 240
+          },
+          {
+            "url": "/#/CommonPage/EventDetail",
+            "winId": 80,
+            "round": 10,
+            "referX": "middle",
+            "referY": "bottom",
+            "referOffsetX": 0,
+            "referOffsetY": 57,
+            "sizeX": 930,
+            "sizeY": 250,
+            "transparence": 230
+          },
+          {
+            "url": "/#/CommonPage/BottomMenu",
+            "winId": 70,
+            "round": 10,
+            "referX": "middle",
+            "referY": "bottom",
+            "referOffsetX": 0,
+            "referOffsetY": 0,
+            "sizeX": 1010,
+            "sizeY": 45,
+            "transparence": 240
+          },
+          {
+            "url": "/#/Fire/RightPanel",
+            "winId": 60,
+            "round": 10,
+            "referX": "right",
+            "referY": "top",
+            "referOffsetX": 21,
+            "referOffsetY": 128,
+            "sizeX": 400,
+            "sizeY": 600,
+            "transparence": 240
+          }
+        ]
+      }
+    },
+    "SECOND_LEVEL_MENU_CONFIG": {
+      "home": {},
+      "security": {
+        "menus": [
+          {
+            "menuId": 41,
+            "name": "视频监控",
+            "edit": 0,
+            "panels": [
+              {
+                "url": "/asset/htmlWindowPages/LeftDetailShowWindow.html",
+                "winId": 11,
+                "round": 3,
+                "referX": "left",
+                "referY": "top",
+                "referOffsetX": 85,
+                "referOffsetY": 100,
+                "sizeX": 322,
+                "sizeY": 750,
+                "transparence": 200
+              },
+              {
+                "winId": 10,
+                "url": "/asset/htmlWindowPages/rightDataWindow_af_spjk.html",
+                "round": 3,
+                "referX": "right",
+                "referY": "top",
+                "referOffsetX": 5,
+                "referOffsetY": 100,
+                "sizeX": 315,
+                "sizeY": 500,
+                "transparence": 200
+              }
+            ],
+            "secondMenu": [
+              {
+                "menuId": 411,
+                "name": "视域分析"
+              }
+            ]
+          },
+          {
+            "menuId": 42,
+            "name": "周界防区",
+            "panels": [],
+            "secondMenu": []
+          },
+          {
+            "menuId": 47,
+            "name": "电子巡更",
+            "panels": [],
+            "secondMenu": [
+              {
+                "menuId": 471,
+                "name": "自动巡更"
+              }
+            ]
+          },
+          {
+            "menuId": 45,
+            "name": "智能车位",
+            "edit": 0,
+            "panels": [
+              {
+                "url": "/asset/htmlWindowPages/LeftDetailShowWindow.html",
+                "winId": 11,
+                "round": 3,
+                "referX": "left",
+                "referY": "top",
+                "referOffsetX": 85,
+                "referOffsetY": 100,
+                "sizeX": 322,
+                "sizeY": 750,
+                "transparence": 200
+              },
+              {
+                "winId": 10,
+                "url": "/asset/htmlWindowPages/rightDataWindow_af_zncw.html",
+                "round": 3,
+                "referX": "right",
+                "referY": "top",
+                "referOffsetX": 5,
+                "referOffsetY": 100,
+                "sizeX": 315,
+                "sizeY": 500,
+                "transparence": 200
+              }
+            ],
+            "secondMenu": [
+              {
+                "menuId": 450,
+                "name": "全部"
+              },
+              {
+                "menuId": 451,
+                "name": "空闲"
+              },
+              {
+                "menuId": 452,
+                "name": "占有"
+              }
+            ]
+          },
+          {
+            "menuId": 43,
+            "name": "出入口",
+            "panels": [
+              {
+                "winId": 10,
+                "url": "/asset/htmlWindowPages/rightDataWindow_af_crk.html",
+                "round": 3,
+                "referX": "right",
+                "referY": "top",
+                "referOffsetX": 5,
+                "referOffsetY": 100,
+                "sizeX": 315,
+                "sizeY": 500,
+                "transparence": 200
+              }
+            ],
+            "secondMenu": [],
+            "window_type": "6"
+          },
+          {
+            "menuId": 44,
+            "name": "人车轨迹",
+            "panels": [],
+            "secondMenu": [
+              {
+                "menuId": 441,
+                "name": "人员轨迹"
+              },
+              {
+                "menuId": 442,
+                "name": "车辆轨迹"
+              }
+            ]
+          },
+          {
+            "menuId": 46,
+            "name": "动态管控",
+            "secondMenu": []
+          },
+          {
+            "menuId": 48,
+            "name": "应急联动",
+            "panels": [
+              {
+                "winId": 10,
+                "url": "/asset/htmlWindowPages/rightDataWindow_af_yjld.html",
+                "round": 3,
+                "referX": "right",
+                "referY": "top",
+                "referOffsetX": 5,
+                "referOffsetY": 100,
+                "sizeX": 315,
+                "sizeY": 500,
+                "transparence": 200
+              }
+            ],
+            "secondMenu": []
+          }
+        ]
+      },
+      "fire": {
+        "menus": [
+          {
+            "menuId": 51,
+            "name": "消防栓",
+            "edit": 0,
+            "panels": [
+              {
+                "url": "/asset/htmlWindowPages/LeftDetailShowWindow.html",
+                "winId": 11,
+                "round": 3,
+                "referX": "left",
+                "referY": "top",
+                "referOffsetX": 85,
+                "referOffsetY": 100,
+                "sizeX": 322,
+                "sizeY": 750,
+                "transparence": 200
+              },
+              {
+                "winId": 10,
+                "url": "/asset/htmlWindowPages/rightDataWindow_xf_xfs.html",
+                "round": 3,
+                "referX": "right",
+                "referY": "top",
+                "referOffsetX": 5,
+                "referOffsetY": 100,
+                "sizeX": 315,
+                "sizeY": 500,
+                "transparence": 200
+              }
+            ],
+            "secondMenu": []
+          },
+          {
+            "menuId": 52,
+            "name": "室内设备",
+            "edit": 0,
+            "panels": [
+              {
+                "url": "/asset/htmlWindowPages/LeftDetailShowWindow.html",
+                "winId": 11,
+                "round": 3,
+                "referX": "left",
+                "referY": "top",
+                "referOffsetX": 85,
+                "referOffsetY": 100,
+                "sizeX": 322,
+                "sizeY": 750,
+                "transparence": 200
+              },
+              {
+                "winId": 10,
+                "url": "/asset/htmlWindowPages/rightDataWindow_xf_snsb.html",
+                "round": 3,
+                "referX": "right",
+                "referY": "top",
+                "referOffsetX": 5,
+                "referOffsetY": 100,
+                "sizeX": 315,
+                "sizeY": 500,
+                "transparence": 200
+              }
+            ],
+            "secondMenu": []
+          },
+          {
+            "menuId": 53,
+            "name": "消防巡检",
+            "edit": 0,
+            "testRenderPoint": null,
+            "panels": [
+              {
+                "url": "/asset/htmlWindowPages/LeftDetailShowWindow.html",
+                "winId": 11,
+                "round": 3,
+                "referX": "left",
+                "referY": "top",
+                "referOffsetX": 85,
+                "referOffsetY": 100,
+                "sizeX": 322,
+                "sizeY": 750,
+                "transparence": 200
+              },
+              {
+                "winId": 10,
+                "url": "/asset/htmlWindowPages/rightDataWindow_xf_xfxj.html",
+                "round": 3,
+                "referX": "right",
+                "referY": "top",
+                "referOffsetX": 5,
+                "referOffsetY": 100,
+                "sizeX": 315,
+                "sizeY": 500,
+                "transparence": 200
+              }
+            ],
+            "secondMenu": []
+          },
+          {
+            "menuId": 54,
+            "name": "火点监测",
+            "edit": 0,
+            "panels": [
+              {
+                "url": "/asset/htmlWindowPages/LeftDetailShowWindow.html",
+                "winId": 11,
+                "round": 3,
+                "referX": "left",
+                "referY": "top",
+                "referOffsetX": 85,
+                "referOffsetY": 100,
+                "sizeX": 322,
+                "sizeY": 750,
+                "transparence": 200
+              },
+              {
+                "winId": 10,
+                "url": "/asset/htmlWindowPages/rightDataWindow_xf_hdjc.html",
+                "round": 3,
+                "referX": "right",
+                "referY": "top",
+                "referOffsetX": 5,
+                "referOffsetY": 100,
+                "sizeX": 315,
+                "sizeY": 500,
+                "transparence": 200
+              }
+            ],
+            "secondMenu": []
+          },
+          {
+            "menuId": 56,
+            "name": "应急联动",
+            "panels": [
+              {
+                "url": "/asset/htmlWindowPages/LeftDetailShowWindow.html",
+                "winId": 11,
+                "round": 3,
+                "referX": "left",
+                "referY": "top",
+                "referOffsetX": 85,
+                "referOffsetY": 100,
+                "sizeX": 322,
+                "sizeY": 750,
+                "transparence": 200
+              },
+              {
+                "winId": 10,
+                "url": "/asset/htmlWindowPages/rightDataWindow_xf_yjld.html",
+                "round": 3,
+                "referX": "right",
+                "referY": "top",
+                "referOffsetX": 5,
+                "referOffsetY": 100,
+                "sizeX": 315,
+                "sizeY": 500,
+                "transparence": 200
+              }
+            ],
+            "secondMenu": []
+          }
+        ]
+      }
+    }
+  }
+}
