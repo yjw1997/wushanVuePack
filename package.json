@@ -14,6 +14,7 @@
     "babel-polyfill": "^6.26.0",
     "echarts": "^4.2.1",
     "element-ui": "^2.7.0",
+    "gojs": "^2.0.7",
     "gsap": "^2.1.2",
     "less": "^3.9.0",
     "less-loader": "^4.1.0",

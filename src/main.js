@@ -11,6 +11,9 @@ import 'element-ui/lib/theme-chalk/index.css'
 import "./assets/style/element-custom.css"
 import eventEnum from './js/eventEnums'
 import EnumUtil from './js/EnumUtil'
+
+import gojs from 'gojs'
+Vue.prototype.go = gojs
 window._$eventEnums = eventEnum;
 promise.polyfill()
 Vue.config.productionTip = false

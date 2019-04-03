@@ -39,13 +39,16 @@
                 <div class="titleLi border-right"><img src="../../assets/images/penple.png" width="100%" height="100%" class="icon">副处长电话：17630242299</div>
                 <div class="titleLi"><img src="../../assets/images/penple.png" width="100%" height="100%" class="icon">负责人电话：17630242299</div>
               </div>
+              <div style="width:100%;height: 400px;" id="gojs">
+                <!-- <Gojs></Gojs> -->
+                <img src="../../assets/images/p1.png" width="100%" height="100%"/>
+              </div>
             </div>
-            <!-- <img src="@/assets/images/yjld.png" width="100%" height="100%"/> -->
+            
           </div>
         </div>
         <!-- 模块二: 资源联动 -->
         <div class="monitorAlarmVice" v-show="tabCur=='资源联动'">
-
           <div class="monitorViceWindow  scroll-hide">
             <div class="box">
                 <img src="../../assets/images/p2.png" width="100%" height="100%"/>
@@ -85,8 +88,6 @@
                     <div class="fl right" style="width:65%">
                       <div style="padding-left: 20px;">当前值班人员</div>
                       <div class="pel">李某某--13788888888</div><div class="pel">李某某--13788888888</div>
-                      <!-- <div class="pel">李某某--13788888888</div><div class="pel">李某某--13788888888</div>
-                      <div class="pel">李某某--13788888888</div><div class="pel">李某某--13788888888</div> -->
                     </div>
                     <div class="box-3"></div>
                   </div>
@@ -96,8 +97,6 @@
                     <div class="fl right" style="width:65%">
                       <div style="padding-left: 20px;">当前值班人员</div>
                       <div class="pel">李某某--13788888888</div><div class="pel">李某某--13788888888</div>
-                      <!-- <div class="pel">李某某--13788888888</div><div class="pel">李某某--13788888888</div>
-                      <div class="pel">李某某--13788888888</div><div class="pel">李某某--13788888888</div> -->
                     </div>
                     <div class="box-3"></div>
                   </div>
@@ -107,8 +106,7 @@
                     <div class="fl right" style="width:65%">
                       <div style="padding-left: 20px;">当前值班人员</div>
                       <div class="pel">李某某--13788888888</div><div class="pel">李某某--13788888888</div>
-                      <!-- <div class="pel">李某某--13788888888</div><div class="pel">李某某--13788888888</div>
-                      <div class="pel">李某某--13788888888</div><div class="pel">李某某--13788888888</div> -->
+                      
                     </div>
                     <div class="box-3"></div>
                   </div>
@@ -118,8 +116,7 @@
                     <div class="fl right" style="width:65%">
                       <div style="padding-left: 20px;">当前值班人员</div>
                       <div class="pel">李某某--13788888888</div><div class="pel">李某某--13788888888</div>
-                      <!-- <div class="pel">李某某--13788888888</div><div class="pel">李某某--13788888888</div>
-                      <div class="pel">李某某--13788888888</div><div class="pel">李某某--13788888888</div> -->
+                      
                     </div>
                     <div class="box-3"></div>
                   </div>
@@ -224,7 +221,7 @@
             <el-button type="primary" style="width: 745px">事件已处理完成，确认提交评估报告</el-button>
           </div>
         </div>
-        <!-- 模块6: 底部操作 -->
+        <!-- 模块7: 底部操作 -->
         <div class="event-form-div" v-show="tabCur!='联动评估'">
           <div class="event-form-title">
             <i class="el-icon-date"></i>
@@ -297,12 +294,13 @@
 
 <script>
   import PanelHeader from "@/components/item/PanelHeaderBar";
-
+  import Gojs from '@/components/DataShowPage/gojs.vue'
   export default {
     name: "event-detail-component",
     data() {
       return {
         tabCur: "应急预案",
+        
         form: {
           searchTypeCheck: [],
           doorTypeCheck: [],
@@ -319,16 +317,16 @@
     methods: {
       handleClose: function () {
         this.$root.$emit("eventDetailClose")
-      }
+      },
+      
     },
     components: {
-      PanelHeader
+      PanelHeader,Gojs
     },
-    mounted: function () {
-
+    mounted() {
 
     }
-  };
+  }
 </script>
 
 <style lang="less" scoped>
